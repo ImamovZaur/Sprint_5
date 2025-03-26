@@ -23,7 +23,3 @@ def logged_user(driver):
     WebDriverWait(driver, 3).until(EC.element_to_be_clickable((Locators.PERSONAL_ACCOUNT)))
     driver.find_element(*Locators.PERSONAL_ACCOUNT).click()
     return driver
-
-
-def wait_for_element_located(driver, locator, time, condition):
-    return WebDriverWait(driver, time).until(condition(locator))

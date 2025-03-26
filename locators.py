@@ -15,9 +15,9 @@ class Locators():
     REGISTRATION_PASSWORD_INPUT = (By.NAME, 'Пароль') #Поле для ввода пароля
     REGISTRATION_BUTTON = (By.XPATH, '//button[text()="Зарегистрироваться"]') #Кнопка "Зарегистрироваться"
     ERROR_MESSAGE = (By.XPATH, '//p[text()="Некорректный пароль"]') #Некорректный пароль
-    BULKI_BUTTON = (By.XPATH, '//span[text()="Булки"]') #Кнопка "Булки"
-    SAUCE_BUTTON = (By.XPATH, '//span[text()="Соусы"]') #Кнопка "Соусы"
-    FILLING_BUTTON = (By.XPATH, '//span[text()="Начинки"]') #Кнопка "Начинка"
+    BULKI_BUTTON = (By.XPATH, '//span[text()="Булки"]/parent::div')  #Кнопка "Булки"
+    SAUCE_BUTTON = (By.XPATH, '//span[text()="Соусы"]/parent::div')  #Кнопка "Соусы"
+    FILLING_BUTTON = (By.XPATH, '//span[text()="Начинки"]/parent::div') #Кнопка "Начинка"
     LOGO_BURGERS = (By.XPATH, '//div/a[@href="/"]') #Лого сайта
     CONSTRUCTOR_BUTTON = (By.XPATH, '//li/a[@href="/"]') #Кнопка "Конструктор"
     CREATE_BURGER = (By.XPATH, '//h1[text()="Соберите бургер"]') #Элемент "Соберите Бургер"
